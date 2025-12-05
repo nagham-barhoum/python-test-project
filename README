@@ -1,0 +1,50 @@
+# Flask Simple Web App
+
+A simple Flask web application that displays an input form and returns the submitted text. The project uses a `src/` directory structure and a Python virtual environment.
+
+
+## Requirements
+
+- Python 3.10+
+- pip
+- PowerShell or CMD (Windows)
+- Git (optional)
+
+## Project Structure
+
+│
+├── venv/ # Virtual environment (ignored by Git)
+├── src/
+│ └── app.py # Main Flask application
+│
+└── .gitignore
+
+## Setup Instructions (Windows)
+
+### 1. Create virtual environment
+
+```powershell
+python -m venv venv
+2. Activate virtual environment
+
+PowerShell:
+
+.\venv\Scripts\Activate
+
+
+If script execution is blocked:
+
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+3. Install Flask
+pip install Flask
+
+Running the Application
+Option 1: Run directly
+python src/app.py
+
+Option 2: Using flask run
+$env:FLASK_APP="src/app.py"
+flask run
+The app will be available at:
+http://127.0.0.1:5000/
